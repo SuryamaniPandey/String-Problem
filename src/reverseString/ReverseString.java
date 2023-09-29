@@ -4,7 +4,11 @@ public class ReverseString {
 
     public static void main(String[] args) {
         String str = "HELLO";
-        thirdApproach(str);
+        /*
+        -->We are calling from any approach as per our used
+        -->All methods are static. So, No need to created object
+         */
+        fifthApproach(str);
     }
 
     /*
@@ -55,5 +59,26 @@ public class ReverseString {
         for (int i=chArray.length-1; i>=0; i--){
             System.out.print(chArray[i]);
         }
+    }
+
+    /*
+    --->In this Approach We are created StringBuffer object and we know StringBuffer are mutable.
+    --->Inside StringBuffer class reverse() method are available, It's used to reverse the String.
+     */
+    private static void fourthApproach(String str){
+
+        StringBuffer sb = new StringBuffer(str);
+        System.out.println(sb.reverse());
+    }
+
+    /*
+    --->This Approach is similar to fourth Approach. But, In this approach we are using StringBuilder
+    --->StringBuilder class are also mutable
+    --->In StringBuilder class also reverse() method are available. This method is help to reverse a string
+     */
+    private static void fifthApproach(String str){
+
+        StringBuilder sb = new StringBuilder(str);
+        System.out.println(sb.reverse());
     }
 }
