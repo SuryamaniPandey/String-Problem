@@ -1,0 +1,6 @@
+********** Four ways to reverse a String **********
+
+1. Using toCharArray() method
+2. Using charAt(int index) method
+3. Using java.lang.StringBuffer class provided reverse() method
+4. Using java.lang.StringBuilder class provided reverse() method
